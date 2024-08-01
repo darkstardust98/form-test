@@ -1,10 +1,11 @@
 @font-face {
     font-family: 'Norse Bold';
-    src: url('font/Norse-Bold.otf') format(.otf);
+    src: url(font/Norse-Bold.otf) format(.otf);
 }
 
 * {
     font-family: 'Norse Bold', fallback, sans-serif;
+    margin: 0;
 }
 
 .flex-container {
@@ -19,8 +20,73 @@
     background-image: url(./img/background.jpg);
     background-size: cover;
     background-position: -325px center;
+    
 }
 
 .form-container {
     width: 60vw;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    gap: 2rem;
+}
+
+#fun-fact {
+    font-weight: bold;
+}
+
+
+.personal-data {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border-radius: 3px;
+    padding: 5px;
+    border-color: #E5E7EB;
+}
+
+input:focus {
+    outline: none;
+    border-color: blue;
+}
+
+label {
+    letter-spacing: 1px;
+    margin: 2px;
+    font-size: small;
+}
+
+form {
+    margin: 0;
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h4 {
+    width: 100%;
+}
+
+#create-account {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    border-color: goldenrod;
+    background-color: goldenrod;
+    color: black;
+    font-weight: bold;
 }
